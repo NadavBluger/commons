@@ -1,3 +1,12 @@
+"""
+Different Logger classes.
+
+Logger- archetype for a logger, not ment to be used on its own
+
+TextFileLogger - log directly into a txt file
+
+MongoDBLogger - logs into a MongoDB
+"""
 import os
 import pymongo
 from datetime import datetime
