@@ -1,3 +1,14 @@
+"""
+Configuration loaders meant to streamline the process of getting values from a configuration file.
+
+Configuration - A parent class not meant to be used on its on
+
+JSONConfiguration - A parent class to all loaders that handle  configuration saved as in the JSON format
+
+JSONFileConfiguration - A class to handle JSON configuration saved as a local file
+
+MongoDBConfiguration - A class to hanfle JSON configurations stored in a Mongo Data Base
+"""
 import json
 import pymongo
 import inspect
