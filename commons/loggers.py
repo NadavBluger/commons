@@ -218,6 +218,15 @@ class MongoDBLogger(Logger):
             self.delete_oldest_doc(collection)
 
 
+class DockerLogger(Logger):
+    def log(self, message, level):
+        level = level.upper()
+        if level not in Logger.levels:
+            raise ValueError(f"Expected level to be one of {Logger.levels.keys()}")
+        if Logger.levels[level] <= self.level:
+            print(f"{datetime.now()} {level}: {message} \n")
+
+
 if __name__ == '__main__':
     a = TextFileLogger("INFO")
     a.log("FUck", "DEBUG")

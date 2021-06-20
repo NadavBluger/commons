@@ -4,6 +4,8 @@
     <list default="true" id="5b2fa3b1-e9c8-4ddf-82b5-831daaaa4ee2" name="Default Changelist" comment="test">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/commons/RabbitMQ.py" beforeDir="false" afterPath="$PROJECT_DIR$/commons/RabbitMQ.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/commons/kafka.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/commons/loggers.py" beforeDir="false" afterPath="$PROJECT_DIR$/commons/loggers.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />

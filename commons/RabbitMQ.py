@@ -3,16 +3,16 @@ A a-synchronise RabbitMQ agent meant to handle both reading and writing to the r
 
 Example for a configuration in the JSON format
 {
-    credentials:'username:password'
-    host: '0.0.0.0'
-    output_exchanges:
+    'credentials':'username:password',
+    'host': '0.0.0.0',
+    'output_exchanges':
         [
-            ('Reader_out',{type:fanout, durable: True #can contain any argument that the exchange declaration will take}),
-            ('Reader_out2',{type:fanout, durable: False}),
-            ('Reader_out3',{})
+            ['Reader_out',{'type':'fanout', 'durable': true #can contain any argument that the exchange declaration will take}],
+            ['Reader_out2',{'type':'fanout', 'durable': false}],
+            ['Reader_out3',{}]
         ],
-    input_exchanges:['Reader_in','Reader_in2'],
-    input_queue:('queueueue',{durable = True, max-limit=1000})
+    'input_exchanges':['Reader_in','Reader_in2'],
+    'input_queue':['queueueue',{'durable':true, 'max-limit':1000}]
 }
 """
 import aio_pika
